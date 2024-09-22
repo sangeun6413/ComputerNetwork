@@ -1673,7 +1673,89 @@ input, select, textarea {
 	}
 
 	#info p:last-of-type {
-		margin-top: 10px; /* "여기에도 작성" 부분을 20px 아래로 이동 */
+		margin-top: 12px; /* "여기에도 작성" 부분을 20px 아래로 이동 */
+	}
+
+
+	h1 {
+		text-transform: none; /* 기본 상태로 설정하여 대문자 변환을 해제 */
 	}
 	
+	.school-name {
+		 font-size: 1.1em; /* 학교 이름 크기를 크게 */
+		/* font-weight: bold; 학교 이름을 굵게 */
+	}
+	
+	.school-year {
+		font-size: 0.9em; /* 숫자 크기를 작게 */
+		color: skyblue; /* 숫자의 색상을 변경 (선택 사항) */
+	}
+	.write.education{
+		font-size: 0.9em;
+		color: gray;
+	}
+	.write-first{
+		font-size:0.9em;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 최소 200px 크기의 칸을 자동으로 채움 */
+		gap: 20px; /* 각 사진 사이의 간격 */
+		align-items: start;
+	}
+	
+	.grid-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.grid-item img {
+		width: 150px;
+		height: auto;
+		margin-bottom: 10px; /* 이미지와 텍스트 사이의 간격 */
+	}
 
+
+	/* 제목 스타일 */
+	h2.major {
+		margin-bottom: 20px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	/* 구분선 스타일 */
+	.section-divider {
+		border: none;
+		height: 2px;
+		background-color: black;
+		margin: 20px 0;
+	}
+
+	/* 그리드 배치 */
+	.grid-container {
+		display: flex;
+		gap: 20px;
+	}
+
+	/* 그리드 아이템 */
+	.grid-item {
+		flex: 1;
+		text-align: center;
+	}
+
+	/* 이미지 스타일 */
+	.grid-item img {
+		width: 150px;
+		height: 150px; /* 고정된 크기 */
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* 텍스트 스타일 */
+	p {
+		font-size: 16px;
+		margin-top: 10px; /* 이미지와 텍스트 사이의 간격 */
+	}
+	
